@@ -1,2 +1,1 @@
-# spring-application-home-library
-Epam training center project
+spring-application
