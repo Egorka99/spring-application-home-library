@@ -51,7 +51,7 @@
 | ``` searchBooksByUserBookmark(UUID userId) ``` | Search books, which are contained in user bookmarks |
 | ``` List<Book> searchBooksBySeveralWays(int year, int pageCount, String partOfName) ``` | Search books by release year, pageCount and book name |
 
-### HistoryService :
+### UserService :
 
 | Method | Role |
 |----------------|:---------:|
