@@ -92,6 +92,5 @@
   - 52 - NICKNAME_ALREADY_EXIST
   - 53 - FAILED_TO_UNLOCK_USER
   - 54 - FAILED_TO_LOCK_USER
-  ### Action Exceptions
-  - 60 - ACTION_NOT_FOUND
+
 
