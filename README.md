@@ -40,3 +40,22 @@
 | ``` void addHistory(UUID userId, String actionText) ``` | Adding new user action record |
 | ``` void deleteHistory(UUID historyId) ``` | Deleting user action record by id |
 | ``` List<History> getUserHistory(UUID userId) ``` | Getting a list of all user action record |
+
+### SearchBookService :
+
+| Method | Role |
+|----------------|:---------:|
+| ``` List<Book> searchBooksByPartOfName(String partOfName) ``` | Search books by book name or part of name |
+| ``` Book searchBookByIsbn(String isbn) ``` | Search book by ISBN(International Standard Book Number) |
+| ``` List<Book> searchBooksByReleaseYearRange(int startYear, int endYear) ``` | Search books by release year range (for example, 2011-2016) |
+| ``` searchBooksByUserBookmark(UUID userId) ``` | Search books, which are contained in user bookmarks |
+| ``` List<Book> searchBooksBySeveralWays(int year, int pageCount, String partOfName) ``` | Search books by release year, pageCount and book name |
+
+### HistoryService :
+
+| Method | Role |
+|----------------|:---------:|
+| ``` User login(String nickname, String password) ``` | Enter to system |
+| ``` void register(String nickname, String password)  ``` | Register new user |
+| ``` void unlockUser(UUID userId) ``` | Unlock user, which was blocked |
+| ``` void lockUser(UUID userId) ``` | Block user |
