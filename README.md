@@ -59,3 +59,39 @@
 | ``` void register(String nickname, String password)  ``` | Register new user |
 | ``` void unlockUser(UUID userId) ``` | Unlock user, which was blocked |
 | ``` void lockUser(UUID userId) ``` | Block user |
+
+
+## Error Codes
+  ### Date Exceptions
+  - 1 - DATE_IS_GREATER_THAN_THE_CURRENT
+  ### Author Exceptions
+  - 10 - AUTHOR_NOT_FOUND
+  - 11 - FAILED_TO_DELETE_AUTHOR
+  - 12 - FAILED_TO_ADD_AUTHOR
+  ### Book Exceptions
+  - 20 - BOOK_NOT_FOUND
+  - 21 - INCORRECT_ISBN
+  - 22 - BOOK_WITH_LESS_THAN_ONE_PAGE
+  - 23 - A_BOOK_WITH_SUCH_ISBN_ALREADY_EXISTS
+  - 24 - FAILED_TO_ADD_BOOK
+  - 25 - INCORRECT_RELEASE_YEAR
+  - 26 - FAILED_TO_DELETE_BOOK
+  ### Bookmark Exceptions
+  - 30 - BOOKMARK_NOT_FOUND
+  - 31 - MORE_PAGES_THAN_IN_THE_BOOK
+  - 32 - PAGES_COUNT_LESS_THEN_ONE
+  - 33 - FAILED_TO_ADD_BOOKMARK
+  - 34 - FAILED_TO_DELETE_BOOKMARK
+  ### History Exceptions
+  - 40 - HISTORY_NOT_FOUND
+  - 41 - FAILED_TO_DELETE_HISTORY
+  - 42 - FAILED_TO_ADD_HISTORY
+  ### User Exceptions
+  - 50 - USER_NOT_FOUND
+  - 51 - USER_IS_BLOCKED
+  - 52 - NICKNAME_ALREADY_EXIST
+  - 53 - FAILED_TO_UNLOCK_USER
+  - 54 - FAILED_TO_LOCK_USER
+  ### Action Exceptions
+  - 60 - ACTION_NOT_FOUND
+
